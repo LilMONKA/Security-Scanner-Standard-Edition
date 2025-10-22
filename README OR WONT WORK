@@ -1,0 +1,67 @@
+🚀 HOW TO RUN FROM GITHUB - SUPER SIMPLE
+⚡ METHOD 1: DOWNLOAD & RUN (Easiest - 3 Steps)
+Step 1: Download from GitHub
+Go to your GitHub page
+Find the SecurityScanner.py file
+Click the "Download" button (or right-click "Raw" → Save As)
+Save it to your Desktop
+Step 2: Install Requirements
+Open Command Prompt and type:
+
+batch
+
+pip install customtkinter psutil
+Step 3: Run It
+Double-click SecurityScanner.py on your Desktop
+
+DONE! ✅
+
+🔥 METHOD 2: CLONE THE REPO (For GitHub Users)
+Step 1: Clone Your GitHub Repo
+batch
+
+cd Desktop
+git clone https://github.com/YourUsername/YourRepoName.git
+Step 2: Go Into The Folder
+batch
+
+cd YourRepoName
+Step 3: Install Requirements
+batch
+
+pip install customtkinter psutil
+Step 4: Run It
+batch
+
+python SecurityScanner.py
+🎯 METHOD 3: ONE-CLICK BAT FILE (From GitHub)
+Create this BAT file on your Desktop:
+File: Download and Run Scanner.bat
+
+batch
+
+@echo off
+title Downloading Security Scanner from GitHub
+color 0A
+
+echo.
+echo ============================================
+echo   DOWNLOADING FROM GITHUB...
+echo ============================================
+echo.
+
+REM Change this to YOUR GitHub URL
+set GITHUB_URL=https://raw.githubusercontent.com/YourUsername/YourRepo/main/SecurityScanner.py
+
+echo Downloading script...
+curl -o "%USERPROFILE%\Desktop\SecurityScanner.py" %GITHUB_URL%
+
+echo.
+echo Installing requirements...
+pip install customtkinter psutil
+
+echo.
+echo Starting Security Scanner...
+python "%USERPROFILE%\Desktop\SecurityScanner.py"
+
+pause
